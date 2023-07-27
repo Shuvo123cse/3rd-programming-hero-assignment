@@ -10,20 +10,195 @@
      <!--font awesome icon-->
      <script src="https://kit.fontawesome.com/4b450f760f.js" crossorigin="anonymous"></script>
      <!--google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
+    <header class="container mx-auto">
+        <div class="rounded-full navbar bg-[#F85559] mb-9">
 
+
+            <div class="navbar-start hidden sm:flex ">
+                <ul class="menu menu-horizontal px-1 text-white text-lg font-medium lato">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li> 
+                    <li><a>Shop</a></li>
+                    <li><a>All fruits</a></li>
+                </ul>
+            </div> 
+
+            <div class="navbar-end  lg:hidden">
+                <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All fruits</a></li>
+                </ul>
+              </div>
+              
+            </div>      
+                <a class="btn btn-error text-xl text-white text-4xl font-bold "><img src="assets/img/logo.png"/>Fruit Burst</a>
+
+                <div class="navbar-end hidden sm:flex lg:pr-5">
+                    <input type="text" placeholder="search here" class="rounded-full input input-bordered w-24 md:w-auto" />
+                </div>
+            </div>    
+                  
     </header>
 
-    <main>
+    <main class="container mx-auto">
+        <!--Hero Section Start-->
+        <section>
+        <div class="hero min-h-screen" style="background-image: url(assets/img/banner1.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+            <h1 class="mb-5 text-4xl text-white font-extrabold">Exotic tastes at your doorstep</h1>
+            <p class="mb-5">We supply highly quality organic products</p>
+            <button class="btn btn-primary">Shop Now</button>
+            </div>
+        </div>
+        </div>
+        <!--Hero Section Start-->
 
+    </section>
+
+
+    <!--Deal Part Start-->
+
+    <section class="mt-14">
+        <div class="flex lg:justify-between md:flex flex-col ">
+        <div class="max-w-2xl">
+            <h2 class="font-extrabold text-4xl text-center lg:text-left">Deal of the day</h2>
+            <p class="pt-3 pb-3 font-medium text-sm text-center lg:text-left">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="flex gap-5">
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  <br>days 
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  <br> hours 
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  <br> min 
+                </div> 
+                <div>
+                  <span class="countdown font-mono text-4xl">
+                    <span style="--value:48;"></span>
+                  </span>
+                  <br> sec 
+                </div>
+        </div>
+        
+    </div>
+ <!--Deal Part Start-->
+    </section>
+
+<!--Card Section Start-->
+    <section class="mt-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+        <div class="card w-96 bg-base-100 shadow-xl ">
+            <figure class="px-10 pt-10">
+              <img src="assets/img/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apple</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              </div>
+              <a>Details</a>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="assets/img/fruit7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Orange</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              </div>
+              <a>Details</a>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="assets/img/fruit8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Red Dragon</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              </div>
+              <a>Details</a>
+            </div>
+          </div>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="assets/img/fruit9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Banana</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              </div>
+              <a>Details</a>
+            </div>
+          </div>
+        </div>
+
+
+<!--Card Section Start-->
+    </section>
+
+        
     </main>
 
     <footer>
 
     </footer>
-    
+
 </body>
 </html>
