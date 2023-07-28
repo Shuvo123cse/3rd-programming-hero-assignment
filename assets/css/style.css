@@ -75,6 +75,10 @@ ul li {
     .extra-part{
         display: none;
     }
+
+    .count{
+        text-align: center;
+    }
 }
 
 /* tablet responsive */
